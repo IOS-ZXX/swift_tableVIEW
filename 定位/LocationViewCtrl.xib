@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationViewCtrl" customModule="swift_tableVIEW" customModuleProvider="target">
+            <connections>
+                <outlet property="jingduLab" destination="Yth-4i-MIC" id="eQZ-q9-sLI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weiduLab" destination="52C-0y-ajm" id="eM4-TM-paS"/>
+                <outlet property="weizhiLab" destination="eGF-DW-pFe" id="8kL-kb-evZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yth-4i-MIC">
+                    <rect key="frame" x="0.0" y="100" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGF-DW-pFe">
+                    <rect key="frame" x="0.0" y="200" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纬度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52C-0y-ajm">
+                    <rect key="frame" x="0.0" y="149.5" width="375" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eGF-DW-pFe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="741-fp-PP3"/>
+                <constraint firstItem="Yth-4i-MIC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Atw-7T-bpn"/>
+                <constraint firstAttribute="trailing" secondItem="52C-0y-ajm" secondAttribute="trailing" id="Bdx-jD-4Cw"/>
+                <constraint firstItem="52C-0y-ajm" firstAttribute="top" secondItem="Yth-4i-MIC" secondAttribute="bottom" constant="29" id="R2x-4D-v78"/>
+                <constraint firstItem="52C-0y-ajm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SPL-Ja-nxg"/>
+                <constraint firstAttribute="trailing" secondItem="eGF-DW-pFe" secondAttribute="trailing" id="eHm-qe-UGm"/>
+                <constraint firstItem="eGF-DW-pFe" firstAttribute="top" secondItem="52C-0y-ajm" secondAttribute="bottom" constant="30" id="lHJ-eL-8VQ"/>
+                <constraint firstItem="Yth-4i-MIC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mUf-xh-YvH"/>
+                <constraint firstAttribute="trailing" secondItem="Yth-4i-MIC" secondAttribute="trailing" id="yAz-BD-9Ya"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="102.5"/>
+        </view>
+    </objects>
+</document>
